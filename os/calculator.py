@@ -1,7 +1,2 @@
-run = True
-while run:
-  print("calculator \n to exit 'exit'")
-  data = input(">:> ")
-  if data == 'exit':
-    run = False
-  print(eval(data))
+def calc(txt,data):
+    txt["text"] = f"{txt['text']}\n{data} = {eval(data)}"
